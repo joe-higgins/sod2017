@@ -1,0 +1,29 @@
+/*******  Trying some css animation effects **********/
+
+
+.slideFadeIn  {
+  animation-name: slideFadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes slideFadeIn {
+  from  {
+    margin-left: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+  to  {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+/*.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  from{background-color: tranparent;}
+  to  {background-color: #c09f80;}
+}*/

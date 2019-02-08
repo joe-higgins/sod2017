@@ -1,0 +1,86 @@
+/*******  Baseline css reset styles are in file "reset.css"  **********/
+
+
+/* color palette from https://basisystems.com/
+  beige #d7cec7
+  gray #565656  rgb(86, 86, 86)
+  red #76323f
+  tan #c09f80
+  off white #fdfdfd;
+  */
+
+  /*FONT SIZING*/
+html { font-size: 62.5%; } /* allows rem sizes to emulate px sizes*/
+body { font-size: 1.6rem; } /* =14px */
+h1   { font-size: 2.4rem; } /* =24px */
+body  {
+  font-family: 'Cormorant Garamond', serif;   /*Fav so far*/
+}
+
+#wrapper  {
+  background: url("images/treeBkgnd.jpg") no-repeat;
+}
+
+#content{
+
+}
+#siteInfo {
+
+}
+#siteName {
+
+}
+#tagline  {
+  f
+}
+
+#social{
+
+}
+
+i {
+
+}
+
+header{
+
+}
+
+nav   {
+
+}
+
+img {
+
+}
+
+@media only screen and (max-width: 899px) {
+  nav li a{font-size:2.0rem;margin:.3rem;padding:0}
+  }
+@media only screen and (max-width: 799px) {
+
+  footer  {
+    padding-top:2rem;
+    text-align:center
+  }
+  nav {
+    margin-top:10px;
+  }
+  nav li  {
+    width:100%
+  }
+  nav li a  {
+    border-bottom:none;
+    line-height:1em;
+    margin:0;
+    padding:.5rem 0;
+    text-align:center;
+  }
+  nav li a:hover  {
+    border-bottom:none
+  }
+  img {
+    width: 100%;
+  }
+  /*nav ul{max-height:0;overflow:hidden;transition:max-height .5s}*/
+}

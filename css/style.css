@@ -1,0 +1,465 @@
+/*******  Baseline css reset styles are in file "reset.css"  **********/
+
+
+/* color palette
+  red:  watermelon #ff383f
+  blue: sky #caebf2 rgba(202,235,242, 0.75)
+  grey: carbon #a9a9a9 rgba(169,169,169, 0.75)
+  grey darker: #807f7f
+  grey dark: #636262
+  white: neutral #efefef
+
+*/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html  { /*  image : The-Fog-Landscape-Lone-Tree-Clouds-Oak-Tree-1934897.jpg
+            license: Creative Commons Zero - CC0. */
+  /* full page background code from "CSS Tricks" by Chris Coyier */
+  background: url("../images/treeBkgnd.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 62.5%; /*allows for rem sizing that resembles the pixel equivalent*/
+}
+
+
+body  {
+  font-family: 'Ubuntu', sans-serif;
+  color: #636262;
+  /*Fav so far*/
+  /*font-family: 'Cormorant Garamond', serif;   */
+  font-weight: 300;
+  /*font-family: 'Lato light', sans-serif;*/
+
+  font-size: 1.6rem; /* about 16px*/
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+
+
+  /*font-family: 'Gilda Display', serif;*/
+  /*font-family: 'Junge', serif;*/
+  /*font-family: 'Antic Didone', serif;*/
+  /*font-family: 'Quattrocento', serif;*/
+  /*font-family: 'Cormorant Garamond', serif;*/
+
+}
+h1  {
+  font-size: 2.4rem;
+  line-height: 4.2rem;
+  /*margin-bottom: 2rem;*/
+}
+h2{
+  font-size: 2.2rem;
+  line-height: 3.8rem;
+}
+h3  {
+  font-size: 2rem;
+  line-height: 3.4rem;
+}
+h4  {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+p {
+  line-height: 2.8rem;
+  margin-bottom: 1.4rem;
+}
+
+a {
+  color: #807f7f;
+}
+
+
+a:link {
+  color: #807f7f;
+}
+
+a:visited {
+  color: #807f7f;
+}
+
+a:focus {
+  color: #ffffff;
+}
+
+a:hover {
+  color: rgba(202,235,242, 0.75);
+}
+
+a:active {
+  color: rgba(202,235,242, 0.75);
+}
+.pageHeading {
+  margin: 0 auto;  /*matches col for now*/
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  color: #ff383f;
+}
+
+.right  {
+  float: right;
+  text-align: right;
+}
+.red  {
+  color: #ff383f;
+}
+.left  {
+  float: left;
+  text-align: left;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.shadow {
+  -webkit-box-shadow: 1px 1px 1px 0px #636262;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 1px 1px 0px #636262;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         1px 1px 1px 0px #636262;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+#banner {
+  background-color: rgba(202,235,242, 0.75);
+  color: #807f7f;
+  /*padding: .8rem 0;*/
+  position: absolute;
+  top: 3.2rem;
+  width: 100%;
+
+  z-index: 100;
+}
+
+#siteInfoWrap {
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#logo  {
+  float: left;
+  margin-left: 5rem;
+  height: 100%;
+}
+
+#siteInfo{
+  float: left;
+  margin-left: 5rem;
+}
+
+#siteName {
+
+}
+nav{
+  /*overflow: auto;*/
+  margin-top: 3rem;
+}
+nav ul {
+ float: right;
+ padding: 0;
+}
+
+nav ul li {
+  font-size: 2rem;
+  float: left;
+  text-align: right;
+  padding: 0 1rem;
+}
+
+nav li a  {
+  text-decoration: none;
+  color:  #807f7f;
+
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:.75s;
+  -ms-transition:.75s;
+  -moz-transition:.75s;
+  -webkit-transition:.75s;
+  /* ...and now for the proper property */
+  transition:.75s;
+}
+
+nav li a:hover  {
+  color: #ff383f;
+}
+
+#wrapper  {
+  height: 100%;
+}
+
+#mainContent  {
+  background-color: rgba(239,239,239, 0.8);
+  width: 85%;
+  height: 90%;
+  overflow: auto;
+  margin: auto;
+  padding:  0;
+  border-radius: 0 0 5px 5px;
+}
+
+#social {
+  background-color: rgba(255,56,63, 0.85);
+  width: 100%;
+  text-align: center;
+}
+
+#social ul{
+  width: 100%;
+  margin: 0 auto;
+  padding: .3rem 0;
+}
+
+#social ul li{
+  list-style-type: none;
+  display: inline;    /* to center icons.  Not sure why it works.  */
+  text-align: center; /*I think "inline" makes the LI's behave as text in the */
+  padding: 0 2rem;    /* containing UL*/
+}
+
+#social ul li a{
+  color: #efefef;
+  text-decoration: none;
+  -o-transition:.75s;
+  -ms-transition:.75s;
+  -moz-transition:.75s;
+  -webkit-transition:.75s;
+  transition:.75s;
+}
+
+#social ul li a:hover{
+  color: #807f7f;
+}
+#lowerContent{
+
+  overflow: hidden;
+}
+#siteName {
+  display: none;
+}
+
+/**********  HOME styles ************/
+
+.content{
+  margin: 8rem 2rem 0 2rem;
+}
+
+/*********   Portfolio styles  ***********/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 1.5rem;
+    width: inherit;
+}
+
+.thumbs {
+  /*max-height: 26rem;*/
+  overflow: hidden;
+}
+.smThumbs {
+  float: left;
+  height: 1rem;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33%;} /* had to adjust width to accomodate a small margin orig 33.33%*/
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+#portWrap img {
+  max-width: 100%;
+  -webkit-box-shadow: 1px 1px 1px 0px #636262;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 1px 1px 0px #636262;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         1px 1px 1px 0px #636262;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+
+}
+
+#portMenu img {
+
+  -webkit-box-shadow: 1px 1px 1px 0px #636262;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 1px 1px 0px #636262;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         1px 1px 1px 0px #636262;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+
+}
+/*********  Description page styles  ***************/
+
+#exPage img {
+  max-width: 60%;
+  margin-right: 2rem;
+  float: left;
+}
+
+/************* Media queries *****************/
+@media only screen and (max-width: 3000px)  {
+
+  .thumbs {
+    max-height: 40rem;
+  }
+}
+@media only screen and (max-width: 2400px)  {
+
+  .thumbs {
+    max-height: 35rem;
+  }
+}
+@media only screen and (max-width: 2000px)  {
+
+  .thumbs {
+    max-height: 30rem;
+  }
+}
+@media only screen and (max-width: 1600px)  {
+
+  .thumbs {
+    max-height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 1300px)  {
+
+  .thumbs {
+    max-height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+  [class*="col-"] {
+          width: 50%;
+  }
+}
+@media only screen and (max-width: 900px)  {
+  #wrapper {
+    color: #4b4949 ;
+  }
+  p   {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      padding: 1rem 0;
+  }
+  #banner {
+    color: #4b4949 ;
+    /*top: 91%;*/
+  }
+
+  #logo {
+
+  }
+  #siteInfo{
+    float: left;
+    margin-left: 2rem;
+    width: 30%;
+  }
+  #siteInfo img{
+    width: 90%;
+    height: auto;
+  }
+
+  #siteName {
+    display: inline-block;
+    padding-bottom: 1rem;
+  }
+
+  nav{
+    margin: .2rem;
+  }
+  nav ul {
+    padding: 0.5rem;
+  }
+  nav ul li a{
+    font-size: 1.6rem;
+    color: #000000;
+    text-align: center;
+  }
+
+  .thumbs {
+    max-height: 18rem;
+  }
+
+  .left {
+
+    text-align: center;
+}
+  /*description page styles*/
+  /*#desc   {
+    float: left;
+  }*/
+
+}
+
+@media only screen and (max-width: 780px)  {
+
+  .thumbs {
+    max-height: 15rem;
+  }
+  
+}
+@media only screen and (max-width: 700px)  {
+
+
+}
+
+@media only screen and (max-width: 480px)  {
+
+
+  #exPage img {
+    display: block;
+    max-width: 85%;
+    margin: 0 auto;
+    float: none;
+  }
+  .thumbs {
+    max-height: 13rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+
+  .thumbs {
+    max-height: 20rem;
+  }
+
+  #social ul li{
+    padding: 0 .5rem;    /* containing UL*/
+  }
+  nav{
+    margin: 0.1rem;
+  }
+  nav ul li{
+    padding: 0.3rem;
+  }
+  nav ul li a{
+    font-size: 1.4rem;
+  }
+  [class*="col-"] {
+          width: 100%;
+  }
+  #siteInfo{
+    margin-left: 1rem;
+    width: 25%;
+  }
+
+
+}
