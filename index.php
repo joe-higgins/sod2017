@@ -44,7 +44,7 @@
           <!-- start home page -->
           <div id="services" class="slideFadeIn content">
             <h4 class="pageHeading left">Web site development and design</h4>
-            <h4 class="pageHeading red">How can we help?</h4>
+            <h4 class="pageHeading red">How can we help you?</h4>
             <hr>
             <div>
               <p>We provide web site design and development services as well as web site hosting and maintenance to make the process of acquiring a web presence as effortless as possible. If you have a design you would like implemented we can provide the coding to get it up and running!</p>
