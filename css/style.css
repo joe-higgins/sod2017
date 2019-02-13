@@ -204,6 +204,10 @@ nav li a:hover  {
   padding:  0;
   border-radius: 0 0 5px 5px;
 }
+#services, #portfolio {
+  animation-duration: 3s;
+  /* animation-delay: 1s; */
+}
 
 #social {
   background-color: rgba(255,56,63, 0.85);
@@ -414,7 +418,7 @@ nav li a:hover  {
   .thumbs {
     max-height: 15rem;
   }
-  
+
 }
 @media only screen and (max-width: 700px)  {
 
